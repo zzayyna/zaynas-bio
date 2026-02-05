@@ -1,7 +1,8 @@
 body {
     background-color: #fffbf0;
     color: #0c3c01;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Carlito", sans-serif;
+    font-size: larger;
     margin: 0;
 }
 
@@ -18,7 +19,18 @@ content p {
     width: 80%;
 }
 
+/* animation */
+@keyframes slideInBottom {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
 
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 /* nav */
 nav {
@@ -49,10 +61,23 @@ nav a:hover {
     background-color: #d6debc;
 }
 
-/* intro */
+nav img {
+    position: relative;
+    left: 20px;
+    padding-bottom: 5px;
+    ;
+}
 
+/* intro */
 .intro {
     height: 80vh;
+}
+
+.intro h1,
+.intro h2 {
+    animation-delay: 2s;
+    animation: slideInBottom 1s forwards;
+
 }
 
 .intro h1 {
@@ -98,8 +123,6 @@ nav a:hover {
 }
 
 /* headings n sizes n stuff */
-
-/* headings */
 
 h2 {
     font-size: 40px;
@@ -226,12 +249,13 @@ input[type="reset"] {
     cursor: pointer;
     color: #fffbf0;
     font-weight: 600;
-    transition: 0.2s ease;
+    transition: 0.5s ease;
 }
 
 input[type="submit"]:hover,
 input[type="reset"]:hover {
     background-color: #a3a380;
+    transform: scale(1.1);
 }
 
 /* footer */
@@ -241,6 +265,7 @@ footer {
     font-size: 14px;
     background-color: #707051;
     color: #fffbf0;
+    font-size: 17px;
 }
 
 /* for nav bar jump scrolling problems */
