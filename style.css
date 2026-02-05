@@ -1,0 +1,253 @@
+body {
+    background-color: #fffbf0;
+    color: #0c3c01;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.content {
+    width: 800px;
+    margin: 0 auto;
+}
+
+content p {
+    width: 80%;
+}
+
+
+
+/* nav */
+nav {
+    float: right;
+    position: fixed;
+    top: 0;
+    background-color: #fffbf0;
+    width: 98%;
+    z-index: 1;
+    padding: 20px;
+    margin-top: 0;
+    border-bottom: #000000 solid 5px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #0c3c01;
+    padding: 10px;
+    transition: 0.2s ease;
+    position: relative;
+    right: 15px;
+    border-radius: 20px;
+
+}
+
+nav a:hover {
+    background-color: #d6debc;
+}
+
+/* intro */
+
+.intro {
+    height: 80vh;
+}
+
+.intro h1 {
+    font-size: 120px;
+}
+
+
+/*about me*/
+
+.aboutme {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+.aboutme p {
+    padding: 25px;
+}
+
+.aboutme img {
+    border-radius: 50px;
+}
+
+/* general section spacing */
+.aboutme,
+.interests,
+.experiences,
+.accessibility,
+.connect {
+    margin-top: 60px;
+}
+
+/* section cards style*/
+.aboutme,
+.interests,
+.experiences,
+.accessibility,
+.connect {
+    background-color: #e7e6d3;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+/* headings n sizes n stuff */
+
+/* headings */
+
+h2 {
+    font-size: 40px;
+    position: relative;
+    bottom: 40px;
+    background-color: #e7e6d3;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+h3 {
+    font-size: 40px;
+    margin-top: 0;
+
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.content p {
+    width: 80%;
+}
+
+/* lists */
+ul {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+/* links inside content */
+.content a {
+    color: #0c3c01;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+
+/* accessibility */
+.accessibility a {
+    background-color: #0c3c01;
+    color: #fffbf0;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 20px;
+    transition: 0.5s ease;
+}
+
+.accessibility a:hover {
+    background-color: #2f5a25;
+    transform: scale(1.1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* connect icons */
+.connect a {
+    display: inline-block;
+    margin: 10px 15px;
+    text-decoration: none;
+    color: #0c3c01;
+    font-weight: 600;
+    transition: 0.5s ease;
+
+}
+
+.connect a:hover {
+    background-color: #d6debc;
+    transform: scale(1.1);
+}
+
+.connect img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* form styling */
+form {
+    margin-top: 15px;
+}
+
+/* text inputs + email + textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 60%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #a3a380;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+/* textarea specific */
+textarea {
+    resize: vertical;
+}
+
+/* buttons */
+input[type="submit"],
+input[type="reset"] {
+    background-color: #707051;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #fffbf0;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #a3a380;
+}
+
+/* footer */
+footer {
+    margin-top: 60px;
+    padding: 20px;
+    font-size: 14px;
+    background-color: #707051;
+    color: #fffbf0;
+}
+
+/* for nav bar jump scrolling problems */
+#about,
+#interests,
+#experiences,
+#accessibility,
+#connect {
+    scroll-margin-top: 120px;
+}

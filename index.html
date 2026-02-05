@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zayna's Bio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <center>
+        <nav>
+            <a href="#intro"><img src="logo.png" alt="Logo" height="50"
+                    style="float: left; position: relative; margin-right: 10px; bottom:10px; margin-bottom: -30px"></a>
+            <a href="#about">about</a>
+            <a href="#interests">interests</a>
+            <a href="#experiences">experiences</a>
+            <a href="#accessibility">accessibility</a>
+            <a href="#connect">let's connect</a>
+        </nav>
+        <br><br><br><br>
+
+        <div class="content">
+            <div class="intro">
+                <h1>Zayna Sayyed</h1>
+                <h2>Junior Computer Science Major</h2>
+            </div>
+
+            <div class="aboutme" id="about">
+                <div class="a1">
+                    <h3>About Me</h3>
+                    <p>I’m a Computer Science major with minors in Graphic Design and Psychology.
+
+                        I was born in Atlanta, Georgia, but grew up in Houston, TX. I moved to Saudi Arabia at age 8,
+                        and
+                        came
+                        back
+                        to
+                        Texas for college.
+                    </p>
+                </div>
+                <div class="a2">
+                    <img src="me.jpg" height="300px" alt="Picture of me, Zayna Sayyed">
+                </div>
+
+            </div>
+
+            <div class="interests" id="interests">
+                <h3>Interests</h3>
+                <ul>
+                    <li>Junk Journaling</li>
+                    <li>Photography</li>
+                    <li>Curating Music Playlists</li>
+                    <li>Watching Sitcoms</li>
+                </ul>
+            </div>
+
+            <div class="experiences" id="experiences">
+                <h3> My Experiences</h3>
+                <h4>Instructional Design & Multimedia Assistant</h4>
+                <h5><i>Sep 2025 - Present</i></h5>
+                <p>I'm working part time at TAMU's College of Enigneering to help design and develop digital learning
+                    materials
+                    for
+                    grad-level courses, ensuring that materials such as slides, videos, and canvas pages are
+                    comprehnsible
+                    and
+                    accessible to all learners.
+                </p>
+                <br><br>
+                <h4>Product Development and QA Contributor</h4>
+                <h5><i>Sep 2025 - Present</i></h5>
+                <p>I'm also working with Julie Products Inc. to help in their website redesign process through a series
+                    of
+                    workshops. This experience includes working and ideating with the team, testing Figma protoype
+                    iterations,
+                    and
+                    launching a feminine healthcare focused AI feature.</p>
+                <h4></h4>
+            </div>
+
+
+            <div class="accessibility" id="accessibility">
+                <h3>Why Accessibility?</h3>
+                <p>I'm interested in accessibility because as someone who is interested in front-end development and
+                    UI/UX design,
+                    I've
+                    learned that accessibility is essential for creating inclusive digital experiences that work for
+                    everyone,
+                    regardless of their abilities or disabilities.</p>
+                <p>There are so many details and nuances to these building these experiences that get overlooked. <br>
+                    My goals are to better understand the disabilities that are out there, the needs and experiences of
+                    user
+                    populations with those
+                    disabilities, and better understand the
+                    laws and standards that govern accessibility.</p>
+                <p>I want to explore <b>Web Accessibility</b>, <b>Educational/Instructional Accessibility</b>, and
+                    <b>Universal
+                        Design</b>.
+                </p>
+                </p>
+                <br><br>
+                <a href="https://docs.google.com/document/d/10nTEkUx4IVWT_oC9CfM5BCgIWGQVcWJRhelf6fSZpuw/edit?usp=sharing"
+                    target="_blank">Check
+                    out
+                    more Web Page Bios.</a>
+                <br><br>
+            </div>
+
+
+            <div class="connect" id="connect">
+                <h3>Let's Connect!</h3>
+
+                <a href="https://www.linkedin.com/in/zayna-sayyed/" target="_blank"><img
+                        src="https://img.icons8.com/ios11/512/linkedin.png" height="50">My Linkedin</a>
+                <a href="https://zzayyna.github.io/zaynasportfolio/" target="_blank"><img src="logo.png" height="60">My
+                    Portfolio</a>
+                <a href="https://www.instagram.com/by.zzayyna/" target="_blank"><img
+                        src="https://cdn.freebiesupply.com/images/large/2x/instagram-logo-black-transparent.png"
+                        height="50">My
+                    Instagram</a>
+
+                <!-- Success message -->
+                <p id="thanks" style="display:none; color:#2f5a25; font-weight:600;">
+                    Thanks for your message! I'll get back to you soon :)
+                </p>
+                <div id="form-container">
+                    <h4>Or leave me a message!</h4>
+
+                    <form action="https://formsubmit.co/55.zayna.s@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New message from Zayna's Bio website!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/?submitted=true#connect">
+
+                        Name:<br>
+                        <input type="text" name="name" required><br>
+
+                        E-mail:<br>
+                        <input type="email" name="email" required><br>
+
+                        Comment:<br>
+                        <textarea name="message" rows="4" cols="50" required></textarea><br><br>
+
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Reset">
+                    </form>
+
+                </div>
+
+                <script>
+                    const params = new URLSearchParams(window.location.search);
+
+                    if (params.get("submitted") === "true") {
+                        const container = document.getElementById("form-container");
+                        container.innerHTML = `
+            <p style="color:#2f5a25; font-weight:600; font-size:18px;">
+                Thanks for your message! I'll get back to you soon :)
+            </p>
+        `;
+                    }
+                </script>
+
+
+            </div>
+        </div>
+        <footer>
+            <p>© 2026 Zayna Sayyed | For CSCE 432</p>
+        </footer>
+    </center>
+
+</body>
+
+</html>
